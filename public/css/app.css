@@ -10,7 +10,39 @@ body {
   text-align: center;
 }
 
-.home-page {
-  padding: 50px 0;
+.home-page,
+.container-comic {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: left;
+}
+
+.home-page ul li,
+.container-comic ul li {
+  list-style: auto;
+  margin: 15px 0;
+  font-size: 25px;
+}
+
+.home-page ul li a,
+.container-comic ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container-comic {
+  flex-direction: column;
+}
+
+.container-comic h2,
+.container-comic h3,
+.container-comic div {
+  margin: 15px 0;
+}
+
+.container-comic div {
+  font-size: 18px;
 }
 

@@ -2,9 +2,15 @@
 @section('content')
     
     <div class="home-page">
-
-        Ciao sono la pagina Home
-        
+        <ul>
+            @foreach ($comics as $comic)
+                <li>
+                    <a href="{{ route('comic', $comic->id) }}">
+                        {{ $comic->title }}
+                    </a>
+                </li>
+            @endforeach
+        </ul>
     </div>
 
 @endsection
