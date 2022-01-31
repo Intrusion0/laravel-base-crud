@@ -13,10 +13,22 @@ body {
 .home-page,
 .container-comic {
   display: flex;
+  flex-direction: column;
   width: 40%;
   margin: 0 auto;
   padding: 80px 0;
   text-align: left;
+}
+
+.home-page h2,
+.container-comic h2 {
+  margin: 10px 0;
+}
+
+.home-page h2 a,
+.container-comic h2 a {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .home-page ul li,
@@ -44,5 +56,15 @@ body {
 
 .container-comic div {
   font-size: 18px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+input,
+label {
+  margin: 15px 0;
+  font-size: 20px;
 }
 

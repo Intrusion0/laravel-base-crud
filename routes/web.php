@@ -15,4 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@home')->name('home');
-Route::get('comic/show/{id}', 'HomeController@show')->name('comic');
+Route::get('comic/show/{id}', 'HomeController@show')->name('show');
+
+Route::get('/comic/create', 'HomeController@create')->name('create');
+Route::post('/comic/store', 'HomeController@store')->name('store');
