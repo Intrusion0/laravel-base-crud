@@ -22,3 +22,5 @@ Route::post('/comic/store', 'HomeController@store')->name('store');
 
 Route::get('/comic/edit/{id}', 'HomeController@edit')->name('edit');
 Route::post('/comic/update/{id}', 'HomeController@update')->name('update');
+
+Route::get('/comic/delete/{id}', 'HomeController@delete')->name('delete');

@@ -14,6 +14,9 @@
                     <span>
                         <a href="{{ route('edit', $comic->id) }}">EDIT</a>
                     </span>
+                    <span>
+                        <a href="{{ route('delete', $comic->id) }}">DELETE</a>
+                    </span>
                 </li>
             @endforeach
         </ul>

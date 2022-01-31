@@ -40,7 +40,7 @@ body {
 
 .home-page ul li span,
 .container-comic ul li span {
-  margin: 0 20px;
+  margin-left: 20px;
 }
 
 .home-page ul li a,
