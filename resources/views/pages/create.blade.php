@@ -20,8 +20,8 @@
 
         <label for="title">Title:</label>
         <input type="text" name="title" placeholder="title"><br>
-        <label for="subtitle">Subtitle:</label>
-        <input type="text" name="author" placeholder="subtitle"><br>
+        <label for="author">author:</label>
+        <input type="text" name="author" placeholder="author"><br>
         <label for="release_date">Release date:</label>
         <input type="date" name="release_date"><br>
         <label for="pages">Pages:</label>
