@@ -38,6 +38,11 @@ body {
   font-size: 25px;
 }
 
+.home-page ul li span,
+.container-comic ul li span {
+  margin: 0 20px;
+}
+
 .home-page ul li a,
 .container-comic ul li a {
   text-decoration: none;

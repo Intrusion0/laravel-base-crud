@@ -41,4 +41,27 @@ class HomeController extends Controller
         // return redirect()->route('pages.home');
         return redirect()->route('show', $comic->id);
     }
+
+    public function edit($id) {
+        
+        $comic = Comic::findOrFail($id);
+
+        return view('pages.edit', compact('comic'));
+    }
+
+    public function update(Request $request, $id) {
+
+        $data = $request->validate([
+            'title' => 'required|string|max:255',
+            'author' => 'required|string|max:60',
+            'release_date' => 'required|date',
+            'pages' => 'required|integer'
+        ]);
+
+        $comic = Comic::findOrFail($id);
+
+        $comic->update($data);
+
+        return redirect()->route('show', $comic->id);
+    }
 }

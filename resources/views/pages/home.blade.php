@@ -11,6 +11,9 @@
                     <a href="{{ route('show', $comic->id) }}">
                         {{ $comic->title }}
                     </a>
+                    <span>
+                        <a href="{{ route('edit', $comic->id) }}">EDIT</a>
+                    </span>
                 </li>
             @endforeach
         </ul>
